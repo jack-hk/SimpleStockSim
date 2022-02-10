@@ -1,0 +1,7 @@
+﻿  main.cpp
+  Generating code
+  28 of 140 functions (20.0%) were compiled, the rest were copied from previous compilation.
+    6 functions were new in current compilation
+    8 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  SimpleStockSim.vcxproj -> C:\Users\5hughj54\Documents\SimpleStockSim\x64\Release\SimpleStockSim.exe
