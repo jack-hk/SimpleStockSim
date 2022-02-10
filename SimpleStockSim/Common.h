@@ -8,14 +8,18 @@ int stock2(STOCK2_VALUE);
 int stock3(STOCK3_VALUE);
 int stocks[3] = { stock1, stock2, stock3 };
 
+int aChanceBase(5), bChanceBase(5);
+int aChanceTemp(5), bChanceTemp(5);
+
 void SimulateStocks() {
     for (size_t i = 0; i < sizeof(stocks) / sizeof(stocks[0]); i++)
     {
-        if (RandomNumber(1, 2) == 1) { //change to a bool rand
+        if (RandomNumber(aChanceTemp, 10) == 1) {    //base 50%
             stocks[i] += RandomNumber(1, 100);
+
         }
         else {
-            stocks[i] -= RandomNumber(1, 100);
+            stocks[i] -= RandomNumber(bChanceTemp, 10);
         }
 
         std::cout << stocks[i] << std::endl;
